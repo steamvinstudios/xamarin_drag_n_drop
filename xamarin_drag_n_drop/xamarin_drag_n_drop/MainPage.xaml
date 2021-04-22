@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_drag_n_drop.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3"
+               Padding="24"
+               CornerRadius="0">
+            <Label Text="Пример Drag &amp; Drop"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="36">
+                <Label.GestureRecognizers>
+                    <DragGestureRecognizer CanDrag="True"
+                                           DragStarting="DragGestureRecognizer_DragStarting" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Frame>
+
+        <Frame Margin="20">
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Yellow"
+                                  Offset="0" />
+                    <GradientStop Color="DeepSkyBlue"
+                                  Offset="1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Frame.GestureRecognizers>
+                <DropGestureRecognizer AllowDrop="True"
+                                       Drop="DropGestureRecognizer_Drop" />
+            </Frame.GestureRecognizers>
+        </Frame>
+        <Frame Margin="20">
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Yellow"
+                                  Offset="0" />
+                    <GradientStop Color="DeepSkyBlue"
+                                  Offset="1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Frame.GestureRecognizers>
+                <DropGestureRecognizer AllowDrop="True"
+                                       Drop="DropGestureRecognizer_Drop" />
+            </Frame.GestureRecognizers>
+        </Frame>
+        <Frame Margin="20">
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Yellow"
+                                  Offset="0" />
+                    <GradientStop Color="DeepSkyBlue"
+                                  Offset="1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Frame.GestureRecognizers>
+                <DropGestureRecognizer AllowDrop="True"
+                                       Drop="DropGestureRecognizer_Drop" />
+            </Frame.GestureRecognizers>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
